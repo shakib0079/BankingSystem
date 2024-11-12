@@ -7,6 +7,7 @@ export function mainMenu(){
     console.log("3. Show Database");
     console.log("4. User Information");
     console.log("5. User Information Update");
+    console.log("6. User Transaction History");
 }
 
 

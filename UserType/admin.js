@@ -5,6 +5,7 @@ import DeleteUserAccount from "../Services/DeleteUserAccount.js";
 import ShowDatabase from "../Services/ShowDatabase.js";
 import ShowUserInformation from "../Services/ShowUserInformation.js";
 import UserInfoUpdate from "../Services/UserInfoUpdate.js";
+import TransactionHistory from "../Services/TransactionHistory.js";
 
 const prompt = PromptSync({sigint:true});
 
@@ -28,6 +29,9 @@ do{
             break;
         case 5:
             UserInfoUpdate();
+            break;
+        case 6:
+            TransactionHistory();
             break;
         default:
             break;
