@@ -36,7 +36,7 @@ export default function userInfoUpdateOperation(_user){
             const updatePassword = prompt.hide(">>");
             _user.password = updatePassword;
             break;
-        case 5:
+        case 6:
             const updateAge = prompt.hide(">>");
             _user.age = updateAge;
             break;

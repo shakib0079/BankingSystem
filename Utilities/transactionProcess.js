@@ -7,7 +7,7 @@ export default function transactionProcess(_user){
     console.log(`Available Balance: ${_user.balance}`);
     console.log(`Total Transaction: ${_user.transactions.length}`);
     let transact = _user.transactions;
-    if(transact){
+    if(transact.length > 0){
         for(const record of transact){
             console.log("--------------------------");
             console.log(`Transaction Type: ${record.type.toUpperCase()}`);
@@ -16,7 +16,9 @@ export default function transactionProcess(_user){
             console.log("--------------------------");
         }
     }else{
+        console.log("--------------------------");
         console.log("No transaction history found!")
+        console.log("--------------------------");
     }
 }
 

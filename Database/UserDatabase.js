@@ -6,7 +6,7 @@ export const UserDatabase = [
         userName: "shakib",
         age: 28,
         email: "shakib@gmail.com",
-        password: "1235hgduj34",
+        password: "Admin@123",
         balance: 0,
         createdAt: "2024-01-01T08:00:00Z",
         transactions: [
@@ -17,12 +17,12 @@ export const UserDatabase = [
     },
     {
         id: 1,
-        firstName: "Alice",
-        lastName: "Johnson",
-        userName: "alicej",
+        firstName: "Ehsanul",
+        lastName: "Shaon",
+        userName: "shaon",
         age: 24,
         email: "alicej@gmail.com",
-        password: "pass1234",
+        password: "User@123",
         balance: 100,
         createdAt: "2024-02-01T10:00:00Z",
         transactions: [
