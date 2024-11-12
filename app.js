@@ -7,10 +7,17 @@ export default function signInSignOutPage(){
 
     do{
         displayUI();
+        console.log("---------------------------------------");
+        console.log("Please provide login information below: ")
+        console.log("---------------------------------------");
         const username = prompt("Enter your username: ")
-        const password = prompt("Enter your password: ")
+        const password = prompt.hide("Enter your password: ")
         const Validation = loginValidation(username, password);
-        console.log(Validation);
+        displayUI();
+        console.log("---------------------------------------");
+        console.log(Validation.message);
+        console.log("---------------------------------------");
+        console.log();
         prompt("Please enter any key to continue...");
     }while(true);
 

@@ -8,7 +8,7 @@ const prompt = PromptSync({sigint:true});
 
 export default function userTask(_user){
     do{
-        userMenu();
+        userMenu(_user);
         const choice  = Number(prompt("Select a menu: "));
         switch (choice) {
             case 1:

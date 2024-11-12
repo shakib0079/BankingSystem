@@ -26,5 +26,5 @@ export default function loginValidation(_username, _password){
             
         }
     }
-    return {statusCode: 409, error: true, message: "User does not exists!", data: null}
+    return {statusCode: 409, error: true, message: "Please provide a correct credential!", data: null}
 }

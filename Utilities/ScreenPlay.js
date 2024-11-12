@@ -13,11 +13,12 @@ export function adminMenu(){
     console.log("7. Log Out");
 }
 
-export function userMenu(){
+export function userMenu(user){
     console.clear();
     console.log(":: || Banking System || ::");
     console.log("--------------------------");
-    console.log("USER CONSOLE");
+    console.log(`Account: ${user.firstName} ${user.lastName}`);
+    console.log(`User ID: ${user.id}`);
     console.log("--------------------------");
     console.log("1. My Information");
     console.log("2. Update Information");
@@ -46,3 +47,4 @@ export function displayDB(_user){
     console.log(`Role: ${_user.isAdmin ? 'Admin' : 'User'}`);
     console.log("--------------------------")
 }
+
