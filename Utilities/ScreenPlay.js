@@ -10,7 +10,8 @@ export function adminMenu(){
     console.log("4. User Information");
     console.log("5. User Information Update");
     console.log("6. User Transaction History");
-    console.log("7. Log Out");
+    console.log("7. Transaction");
+    console.log("8. Log Out");
 }
 
 export function userMenu(user){
@@ -25,6 +26,17 @@ export function userMenu(user){
     console.log("3. Transaction");
     console.log("4. Log Out");
 
+}
+
+export function transactinUI(user){
+    console.log("--------------------------");
+    console.log(`Account: ${user.firstName} ${user.lastName}`);
+    console.log(`User ID: ${user.id}`);
+    console.log("--------------------------");
+    console.log("1. Deposite");
+    console.log("2. Withdraw");
+    console.log("3. Check Balance");
+    console.log("4. Main Menu");
 }
 
 

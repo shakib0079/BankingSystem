@@ -7,6 +7,7 @@ import ShowUserInformation from "../Services/ShowUserInformation.js";
 import UserInfoUpdate from "../Services/UserInfoUpdate.js";
 import TransactionHistory from "../Services/TransactionHistory.js";
 import signInSignOutPage from "../app.js";
+import Transaction from "../Services/Transaction.js";
 
 const prompt = PromptSync({sigint:true});
 
@@ -36,6 +37,9 @@ export default function administartionTask(){
                 TransactionHistory();
                 break;
             case 7:
+                Transaction();
+                break;
+            case 8:
                 signInSignOutPage();
                 break;
             default:

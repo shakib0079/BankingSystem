@@ -6,7 +6,7 @@ import { displayDB } from "./ScreenPlay.js";
 export function userFIlter(_id){
     for(const user of UserDatabase){
         if(user.id === _id){
-            displayDB(user);
+            // displayDB(user);
             return {statusCode: 200, error: false, message: "User Found", data: user}
         }
     }

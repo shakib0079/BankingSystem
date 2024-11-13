@@ -43,7 +43,9 @@ export const UserDatabase = [
         createdAt: "2024-03-01T09:00:00Z",
         transactions: [
             { type: "deposit", amount: 300, date: "2024-03-05T12:00:00Z" },
-            { type: "withdrawal", amount: 100, date: "2024-03-15T15:45:00Z" }
+            { type: "withdrawal", amount: 100, date: "2024-03-15T15:45:00Z" },
+            { type: "deposit", amount: 300, date: "2024-03-05T12:00:00Z" },
+            { type: "deposit", amount: 300, date: "2024-03-05T12:00:00Z" }
         ],
         isAdmin: false
     },

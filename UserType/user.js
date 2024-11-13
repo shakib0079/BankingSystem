@@ -3,6 +3,7 @@ import { userMenu } from "../Utilities/ScreenPlay.js";
 import signInSignOutPage from "../app.js";
 import ShowOwnInformation from "../Services/ShowOwnInformation.js";
 import UpdateOwnInformation from "../Services/UpdateOwnInformation.js";
+import Transaction from "../Services/Transaction.js";
 
 const prompt = PromptSync({sigint:true});
 
@@ -22,6 +23,9 @@ export default function userTask(_user){
                 break;
             case 4:
                 signInSignOutPage();
+                break;
+            case 5:
+                Transaction(_user);
                 break;
             default:
                 break;
