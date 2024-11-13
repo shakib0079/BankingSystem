@@ -21,7 +21,7 @@ export default function depositeOps(_user, isAdmin){
 function depositFunc(user, amount){
     const transactions = user.transactions;
     const deposit = {
-        type: 'deposite',
+        type: 'deposit',
         amount,
         date: new Date()
     }

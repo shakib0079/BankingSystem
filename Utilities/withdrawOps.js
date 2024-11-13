@@ -3,10 +3,14 @@ import { displayUI } from "./ScreenPlay.js";
 import administartionTask from "../UserType/admin.js";
 const prompt = PromptSync({sigint:true});
 
-export default function withdrawOps(user){
+export default function withdrawOps(user, isAdmin){
     displayUI();
     const amount = Number(prompt("Amount: "))
     if(amount < user.balance && amount > 0){
+        if(isAdmin){
+            withdrawFunc(user,amount)
+            administartionTask();
+        }
         withdrawFunc(user,amount)
     }else if(amount > user.balance){
         console.log("You do not have sufficient balance")

@@ -5,6 +5,7 @@ import administartionTask from "../UserType/admin.js";
 import userTask from "../UserType/user.js";
 import depositeOps from "../Utilities/depositeOps.js";
 import withdrawOps from "../Utilities/withdrawOps.js";
+import checkBalanceOps from "../Utilities/checkBalanceOps.js";
 
 const prompt = PromptSync({sigint:true});
 
@@ -31,11 +32,11 @@ export default function Transaction(user){
                 // depositeOps();
                 break;
             case 2:
-                role ? withdrawOps(ops.data) : withdrawOps(user);
+                role ? withdrawOps(ops.data, true) : withdrawOps(user, false);
                 // withdrawOps();
                 break;
             case 3:
-                role ? checkBalanceOps(ops.data) : checkBalanceOps(user);
+                role ? checkBalanceOps(ops.data, true) : checkBalanceOps(user, false);
                 // checkBalanceOps();
                 break;
             case 4:
@@ -45,7 +46,7 @@ export default function Transaction(user){
                 break;
         }
 
-        prompt("Please enter any key to continue...");
+        // prompt("Please enter any key to continue...");
 
     }while(true)
 }
